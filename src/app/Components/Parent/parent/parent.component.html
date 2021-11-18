@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="container-fluid">
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Add name" #name>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Add Image Link" #image>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Add Url Link" #url>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-outline-info btn-block" type="submit" (click)="AddCard(name,image,url)">Add Voting Card</button>
+        </div>
+      </form>
+  
+    </div>
+  </div>
+
+  <app-child [OutGoingDataToChild]="_VotingCardObject"></app-child>
